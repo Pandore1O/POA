@@ -1,4 +1,4 @@
-package com.menezes.poa.agenda;
+package Agenda;
 
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
@@ -33,7 +33,7 @@ public class Agenda {
 			while (bufferedReader.ready()) {
 				String aux = bufferedReader.readLine();
 				String[] dados = aux.split(";");
-				System.out.println("Nome: " + dados[0] + "\nTelefone: " + dados[1]);
+				System.out.println("Nome: " + dados[0] + ", Telefone: " + dados[1] + "\n");
 			}
 			
 			bufferedReader.close();
@@ -60,7 +60,7 @@ public class Agenda {
 				
 				if (aux.toLowerCase().contains(nome.toLowerCase())) {
 					String[] dados = aux.split(";");
-					System.out.println("Nome: " + dados[0] + "\nTelefone: " + dados[1]);
+					System.out.println("Nome: " + dados[0] + ", Telefone: " + dados[1]);
 					encontrado = true;
 				}
 				
