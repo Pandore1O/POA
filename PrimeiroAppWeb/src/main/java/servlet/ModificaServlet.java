@@ -44,6 +44,8 @@ public class ModificaServlet extends HttpServlet {
 		resultado = (texto.equalsIgnoreCase("Lucas")) ? 4 : resultado;
 		resultado = (texto.equalsIgnoreCase("Miguel")) ? 5 : resultado;
 		resultado = (texto.equalsIgnoreCase("cauÃ£")) ? 6 : resultado;
+		resultado = (texto.equalsIgnoreCase("Anna")) ? 7 : resultado;
+		resultado = (texto.equalsIgnoreCase("Bya") || texto.equalsIgnoreCase("Beatryz")) ? 8 : resultado;
 		
 		switch (resultado) {
 		
@@ -69,6 +71,14 @@ public class ModificaServlet extends HttpServlet {
 			
 		case 6:
 			texto = texto.replace(texto, "VASCO.");
+			break;
+			
+		case 7:
+			texto = texto.replace(texto, "Ms. Friorenta");
+			break;
+			
+		case 8:
+			texto = texto.replace(texto, "BOTAFOGO!!!!!!!!!!!!!!!");
 			break;
 			
 		default:
